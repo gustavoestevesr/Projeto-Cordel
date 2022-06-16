@@ -6,6 +6,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CORDEL MODERNO</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root{
+    --fontePadrao: Verdana, Geneva, Tahoma, sans-serif;
+    --fonteTitulo: 'Passion One', cursive;
+    --fonteSubTexto: 'Sriracha', cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fontePadrao);
+}
+
+header {
+    background-color: black;
+    text-align: center;
+    color: black;    
+}
+
+header > section > p > span {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonteTitulo);
+    font-size: 10vw;
+}
+
+header > section > p {
+    padding-bottom: 50px;
+}
+
+header a, footer a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 2em;
+    padding-left: 30px;
+    font-family: var(--fonteSubTexto);
+    font-size: 4vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgba(0, 0, 0, 0.476);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.519);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.397);
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.544);    
+}
+
+section#img0 {
+    background-image: url('imagens/background001.jpg');
+    background-position: right bottom;
+}
+
+section#img1 {
+    background-image: url('imagens/background002.jpg');
+}
+
+section#img3 {
+    background-image: url('imagens/background003.jpg');
+    background-position: left bottom;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2.5vw;
+}
+    </style>
 </head>
 <body>
     <header>
